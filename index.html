@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agricultural Marketing</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e8f5e9, #ffffff);
+    color: #2e7d32;
+}
+
+header {
+    background: #1b5e20;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #388e3c;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #1b5e20;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s;
+    padding: 10px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);} 
+    to {opacity: 1; transform: translateY(0);} 
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+🌾 Agricultural Marketing Guide 🌾
+</header>
+
+<nav>
+<a href="#intro">Introduction</a>
+<a href="#functions">Functions</a>
+<a href="#problems">Problems</a>
+<a href="#solutions">Solutions</a>
+</nav>
+
+<section id="intro" class="fade-in">
+<h2>What is Agricultural Marketing?</h2>
+<div class="card">
+<p>
+Agricultural marketing includes all activities involved in moving crops from farmers to consumers. It covers transportation, storage, processing, grading, and selling of agricultural products.
+</p>
+</div>
+</section>
+
+<section id="functions">
+<h2>Functions of Agricultural Marketing</h2>
+<div class="grid">
+
+<div class="card fade-in">
+<h3>Collection</h3>
+<p>Farmers gather and bring crops to markets for selling.</p>
+</div>
+
+<div class="card fade-in">
+<h3>Transportation</h3>
+<p>Goods are transported from villages to cities.</p>
+</div>
+
+<div class="card fade-in">
+<h3>Storage</h3>
+<p>Warehousing prevents spoilage and helps in price stability.</p>
+</div>
+
+<div class="card fade-in">
+<h3>Processing</h3>
+<p>Raw crops are converted into usable products like flour or sugar.</p>
+</div>
+
+<div class="card fade-in">
+<h3>Grading</h3>
+<p>Products are sorted based on quality standards.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Related Agreegates ( Image refernce )</h2>
+<div class="grid">
+
+<div class="image-container">
+<img src="farmingimg1.jpg" alt="Farm">
+<div class="overlay">Farming is the first step in agricultural marketing.</div>
+</div>
+
+<div class="image-container">
+<img src="farming.jpg" alt="Transport">
+<div class="overlay">Transportation connects farms to markets.</div>
+</div>
+
+<div class="image-container">
+<img src="storage.jpg" alt="Storage">
+<div class="overlay">Proper storage reduces wastage and losses.</div>
+</div>
+
+</div>
+</section>
+
+<section id="problems">
+<h2>Problems in Agricultural Marketing</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Lack of Storage</h3>
+<p>Farmers are forced to sell quickly at low prices.</p>
+</div>
+
+<div class="card">
+<h3>Middlemen</h3>
+<p>Too many intermediaries reduce farmer profits.</p>
+</div>
+
+<div class="card">
+<h3>Poor Transport</h3>
+<p>Leads to damage and wastage of goods.</p>
+</div>
+
+<div class="card">
+<h3>Price Fluctuation</h3>
+<p>Unstable prices create uncertainty.</p>
+</div>
+
+</div>
+</section>
+
+<section id="solutions">
+<h2>Solutions & Improvements</h2>
+<div class="grid">
+
+<div class="card">
+<h3>APMC Markets</h3>
+<p>Regulated markets protect farmers from exploitation.</p>
+</div>
+
+<div class="card">
+<h3>e-NAM</h3>
+<p>Online trading platform for better pricing.</p>
+</div>
+
+<div class="card">
+<h3>Cooperatives</h3>
+<p>Farmers unite to increase bargaining power.</p>
+</div>
+
+<div class="card">
+<h3>MSP</h3>
+<p>Minimum Support Price ensures fair income.</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Agricultural Learning Website
+</footer>
+
+</body>
+</html>
